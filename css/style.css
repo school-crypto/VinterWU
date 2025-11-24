@@ -2,3 +2,32 @@
 
 --headcolor: #27ae60;
 }
+
+#main_wrapper {
+    display: grid;
+    width: 90vw;
+    height: auto;
+grid-template-areas: 
+"hd"
+"nav"
+"pic"
+"mn"
+;
+grid-template-columns: 10% 10% auto auto;
+}
+
+#main_nav {
+    display: nav;
+}
+
+#main_header{
+    display: hd;
+}
+
+#main_main{
+     display: mn;
+}
+
+#picture{
+    display: pic;
+}
