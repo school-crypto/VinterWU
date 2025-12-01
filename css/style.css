@@ -6,28 +6,57 @@
 #main_wrapper {
     display: grid;
     width: 90vw;
-    height: auto;
+    height: 100vh;
 grid-template-areas: 
 "hd"
 "nav"
 "pic"
 "mn"
 ;
-grid-template-columns: 10% 10% auto auto;
+grid-template-rows: 10% 10% auto auto;
+column-gap: 2rem;
+row-gap: 2rem;
+
 }
 
 #main_nav {
     display: nav;
+    display: flex;
+    background-color: var(--headcolor);
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 21px;
+    justify-content: space-evenly;
 }
+
+#text1{
+    display: t1;
+}
+
+#text2{
+    display: t2;
+}
+
+#text3{
+    padding: 1rem;
+}
+
 
 #main_header{
     display: hd;
+    background-color: var(--headcolor);
+    border-radius: 2rem;
+
 }
 
 #main_main{
      display: mn;
+     background: var(--headcolor);
+     border-radius: 2rem;
 }
 
 #picture{
     display: pic;
+    background: var(--headcolor);
+    border-radius: 2rem;
 }
