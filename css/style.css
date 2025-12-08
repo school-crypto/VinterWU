@@ -1,11 +1,16 @@
+body {
+}
+
 :root{
 
 --headcolor: #27ae60;
 }
 
+
 #main_wrapper {
+    background-color: #d9fedb;
     display: grid;
-    width: 90vw;
+    width: 98vw;
     height: 100vh;
 grid-template-areas: 
 "hd"
@@ -13,50 +18,76 @@ grid-template-areas:
 "pic"
 "mn"
 ;
-grid-template-rows: 10% 10% auto auto;
+grid-template-rows: 15% 10% auto auto;
 column-gap: 2rem;
 row-gap: 2rem;
+padding: 8px;
+border-radius: 2rem;
 
 }
 
 #main_nav {
     display: nav;
     display: flex;
-    background-color: var(--headcolor);
+    border: var(--headcolor), solid;
+    background-color: white;
     border-radius: 2rem;
     padding: 1rem;
     font-size: 21px;
     justify-content: space-evenly;
 }
 
-#text1{
-    display: t1;
-}
-
-#text2{
-    display: t2;
-}
-
 #text3{
     padding: 1rem;
+    font-size: 21px;
+    letter-spacing: 0.8px;
+    line-height: 1.5rem;
 }
 
 
 #main_header{
     display: hd;
-    background-color: var(--headcolor);
+    border: var(--headcolor), solid;
+    background-color: white;
     border-radius: 2rem;
+    text-align: center;
+    font-size: 34px;
 
 }
 
 #main_main{
      display: mn;
-     background: var(--headcolor);
+    border: var(--headcolor), solid;
+    background-color: white;
      border-radius: 2rem;
 }
 
 #picture{
     display: pic;
-    background: var(--headcolor);
+    border: var(--headcolor), solid;
+    background-color: white;
     border-radius: 2rem;
+}
+
+a:hover{
+    color: var(--headcolor);
+}
+
+a:visited {
+    color: var(--headcolor);
+}
+
+#main_wrapper_2{
+    background-color: #d9fedb;
+    padding: 9px;
+    border-radius: 2rem;
+    width: 98vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "head2"
+    "nav2"
+    "main2"
+    "foot2"
+    ;
 }
